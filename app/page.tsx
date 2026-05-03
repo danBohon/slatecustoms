@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { HeroSection } from "@/components/hero-section";
+import { CurrentBuildsSection } from "@/components/current-builds-section";
 
 export const metadata: Metadata = {
   title: "Prebuilt Gaming PCs in Waukegan, IL — Budget to Mid-Tier Builds",
@@ -8,5 +9,10 @@ export const metadata: Metadata = {
 };
 
 export default function HomePage() {
-  return <HeroSection />;
+  return (
+    <>
+      <HeroSection />
+      <CurrentBuildsSection />
+    </>
+  );
 }
