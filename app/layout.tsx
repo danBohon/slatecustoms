@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Link from "next/link";
+import { NavLinks } from "@/components/nav-links";
 import { ThemeToggle } from "@/components/theme-toggle";
 import "./globals.css";
 
@@ -43,13 +45,14 @@ export default function RootLayout({
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
       </head>
       <body className="min-h-full flex flex-col">
-        <nav className="flex items-center justify-between border-b border-[var(--color-border)] px-6 py-4">
-          <a
+        <nav className="sticky top-0 z-50 flex items-center justify-between border-b border-border bg-bg px-6 py-4">
+          <Link
             href="/"
-            className="font-sans text-lg font-extrabold uppercase tracking-tight text-[var(--color-text-primary)]"
+            className="font-sans text-lg font-extrabold uppercase tracking-tight text-text-primary"
           >
             DANERD
-          </a>
+          </Link>
+          <NavLinks />
           <ThemeToggle />
         </nav>
         <main className="flex flex-1 flex-col">{children}</main>

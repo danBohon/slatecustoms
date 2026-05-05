@@ -59,3 +59,7 @@ body {
   color: var(--color-text-primary);
   font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
 }
+
+section[id] {
+  scroll-margin-top: 5rem;
+}
