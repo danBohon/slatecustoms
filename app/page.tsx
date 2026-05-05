@@ -3,6 +3,7 @@ import { HeroSection } from "@/components/hero-section";
 import { CurrentBuildsSection } from "@/components/current-builds-section";
 import { PreviousBuildsSection } from "@/components/previous-builds-section";
 import { CommissionsSection } from "@/components/commissions-section";
+import { ContactSection } from "@/components/contact-section";
 
 export const metadata: Metadata = {
   title: "Prebuilt Gaming PCs in Waukegan, IL — Budget to Mid-Tier Builds",
@@ -17,6 +18,7 @@ export default function HomePage() {
       <CurrentBuildsSection />
       <PreviousBuildsSection />
       <CommissionsSection />
+      <ContactSection />
     </>
   );
 }
