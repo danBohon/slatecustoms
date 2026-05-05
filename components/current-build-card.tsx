@@ -15,7 +15,7 @@ export function CurrentBuildCard({ build, priority = false }: Props) {
   const ctaHref = `?subject=${encodeURIComponent(subject)}#contact`;
 
   return (
-    <article className="flex flex-col border border-[var(--color-border)] bg-[var(--color-surface)]">
+    <article className="flex h-full flex-col border border-border bg-surface">
       <div className="relative aspect-[4/3] w-full overflow-hidden border-b border-[var(--color-border)] bg-[var(--color-surface-2)]">
         <Image
           src={heroPhoto.src}

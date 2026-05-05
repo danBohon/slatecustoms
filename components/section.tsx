@@ -11,7 +11,7 @@ export function Section({
   ...rest
 }: SectionProps) {
   return (
-    <section className={`py-20 md:py-28 ${className}`.trim()} {...rest}>
+    <section className={`py-16 md:py-20 ${className}`.trim()} {...rest}>
       <div
         className={`mx-auto w-full max-w-6xl px-6 md:px-10 ${containerClassName}`.trim()}
       >
