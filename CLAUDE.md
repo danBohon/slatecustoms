@@ -39,8 +39,6 @@ Section order top to bottom:
   enthusiast-tier builds with a CTA scrolling to the contact form. No
   detailed process page yet — that gets added if commissions become a
   meaningful share of the business.
-- **Why buy from me**: Short, personal section. What makes these builds
-  different, my approach, my standards.
 - **Contact form**: Embedded at the bottom of the page. Same form
   component as the About page.
 
@@ -49,6 +47,8 @@ Short, focused page that gives the site a second indexable URL with
 strong local-business signal:
 
 - Who I am, my background, why I do this
+- **Why buy from me**: What makes these builds different, my approach,
+  my standards.
 - Service area: Waukegan, Gurnee, Libertyville, Lake Forest, North
   Chicago, Lake County broadly
 - Phone, email, response time expectation
