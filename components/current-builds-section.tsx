@@ -19,7 +19,7 @@ export function CurrentBuildsSection() {
           No builds available right now — check back soon.
         </p>
       ) : (
-        <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 [&:has(details[open])]:items-start">
           {builds.map((build, index) => (
             <li key={build.slug} className="flex flex-col">
               <CurrentBuildCard build={build} priority={index === 0} />
