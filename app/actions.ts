@@ -39,7 +39,7 @@ export async function submitContactForm(
   const resend = new Resend(apiKey);
 
   const { error } = await resend.emails.send({
-    from: "Danerd Contact <onboarding@resend.dev>",
+    from: "SLATE. Contact <onboarding@resend.dev>",
     to,
     replyTo: `${name} <${email}>`,
     subject: `New inquiry: ${subject}`,

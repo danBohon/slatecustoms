@@ -6,9 +6,9 @@ import { CommissionsSection } from "@/components/commissions-section";
 import { ContactSection } from "@/components/contact-section";
 
 export const metadata: Metadata = {
-  title: "Prebuilt Gaming PCs in Waukegan, IL — Budget to Mid-Tier Builds",
+  title: "Prebuilt Gaming PCs in Waukegan, IL — Local Pickup or Shipped",
   description:
-    "Locally built and tested prebuilt gaming PCs serving Waukegan, Lake County, and the North Chicago suburbs. Custom enthusiast-tier builds available on commission.",
+    "Hand-built gaming PCs from a local builder in Lake County, IL. Local pickup or shipped to your door. Custom enthusiast commissions available.",
 };
 
 export default function HomePage() {

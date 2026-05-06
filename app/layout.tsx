@@ -21,8 +21,8 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Danerd — Prebuilt Gaming PCs in Waukegan, IL",
-    template: "%s | Danerd",
+    default: "SLATE. — Prebuilt Gaming PCs in Waukegan, IL",
+    template: "%s | SLATE.",
   },
   description:
     "Locally built and tested prebuilt gaming PCs serving Waukegan, Lake County, and the North Chicago suburbs.",
@@ -50,7 +50,7 @@ export default function RootLayout({
             href="/"
             className="font-sans text-lg font-extrabold uppercase tracking-tight text-text-primary"
           >
-            DANERD
+            SLATE.
           </Link>
           <NavLinks />
           <ThemeToggle />

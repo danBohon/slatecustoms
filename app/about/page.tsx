@@ -15,7 +15,7 @@ const SITE_URL =
 const localBusiness = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  name: "Danerd",
+  name: "SLATE.",
   description:
     "Locally built and tested prebuilt gaming PCs serving Waukegan, Lake County, and the North Chicago suburbs.",
   url: SITE_URL,
