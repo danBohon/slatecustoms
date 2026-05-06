@@ -19,8 +19,9 @@ export function ContactSection() {
             Get in Touch
           </h2>
           <p className="font-sans text-sm text-text-secondary sm:text-base">
-            Interested in a build or want to talk about a custom commission?
-            Fill out the form and I&apos;ll get back to you within 24 hours.
+            Interested in a current build or want to talk about a custom
+            commission? Fill out the form and I&apos;ll get back to you
+            within 24 hours.
           </p>
         </div>
         <div className="flex-1">
