@@ -68,10 +68,21 @@ export default function AboutPage() {
           <h1 className="font-sans text-4xl font-extrabold text-text-primary sm:text-5xl">
             About
           </h1>
-          <p className="mt-6 font-sans text-base leading-relaxed text-text-secondary sm:text-lg">
-            Placeholder — your bio goes here. Who you are, how you got into
-            building PCs, why you started doing this locally.
-          </p>
+          <div className="mt-6 flex flex-col gap-4 font-sans text-base leading-relaxed text-text-secondary sm:text-lg">
+            <p>
+              I&apos;ve been building PCs for myself and friends for over 10
+              years. What started as a hobby turned into something I couldn&apos;t
+              stop doing — every friend group has that one person everyone calls
+              when they need a PC built. Eventually it made sense to make it
+              official.
+            </p>
+            <p>
+              I started SLATE. because I wanted to make high-performance gaming
+              PCs genuinely affordable for people in Lake County. No bloatware,
+              no upsells, no big-box markup — just well-researched builds from
+              someone who actually cares about the hardware.
+            </p>
+          </div>
         </div>
       </Section>
 
@@ -85,12 +96,18 @@ export default function AboutPage() {
             </h2>
             <div className="flex flex-col gap-4 font-sans text-base leading-relaxed text-text-secondary">
               <p>
-                Placeholder — what makes these builds different. Your standards,
-                your testing process, why a local builder beats a big retailer.
+                I obsess over performance per dollar. Every build starts with
+                research — I track deals on new and used parts, know which
+                components punch above their price point, and won&apos;t spec a
+                build around parts that don&apos;t earn their place. You get the
+                most performance your budget allows, not the most margin I can
+                squeeze out of it.
               </p>
               <p>
-                Placeholder — your approach to component selection, build
-                quality, cable management, whatever matters to you.
+                The details matter too. Cable management, airflow, component
+                compatibility, thermal testing before delivery — I treat every
+                build like it&apos;s going in my own rig. If I wouldn&apos;t be
+                proud to put my name on it, it doesn&apos;t ship.
               </p>
             </div>
           </div>
