@@ -163,15 +163,22 @@ function requireSpecs(
     cooling: requireString(specsRecord, "cooling", `${file} > specs`),
     case: requireString(specsRecord, "case", `${file} > specs`),
   };
+  if (specsRecord.fans !== undefined) {
+    if (typeof specsRecord.fans !== "string") {
+      throw new Error(`[${file}] "specs.fans" must be a string when present`);
+    }
+    result.fans = specsRecord.fans;
+  }
   if (specsRecord.os !== undefined) {
     if (typeof specsRecord.os !== "string") {
       throw new Error(`[${file}] "specs.os" must be a string when present`);
     }
     result.os = specsRecord.os;
   }
+  const OPTIONAL_SPEC_KEYS = ["fans", "os"];
   // Surface unexpected spec keys so typos don't go silent
   for (const key of Object.keys(specsRecord)) {
-    if (!REQUIRED_SPEC_KEYS.includes(key as keyof BuildSpecs) && key !== "os") {
+    if (!REQUIRED_SPEC_KEYS.includes(key as keyof BuildSpecs) && !OPTIONAL_SPEC_KEYS.includes(key)) {
       throw new Error(`[${file}] Unknown "specs" field "${key}"`);
     }
   }

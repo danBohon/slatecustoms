@@ -8,8 +8,8 @@ export function NavLinks() {
   const isHome = pathname === "/";
 
   const links = [
-    { label: "About", href: "/about" },
     { label: "Contact", href: isHome ? "#contact" : "/#contact" },
+    { label: "About", href: "/about" },
   ];
 
   return (

@@ -15,6 +15,7 @@ export interface BuildSpecs {
   motherboard: string;
   psu: string;
   cooling: string;
+  fans?: string;
   case: string;
   os?: string;
 }

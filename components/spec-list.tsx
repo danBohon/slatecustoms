@@ -8,6 +8,7 @@ const SPEC_LABELS: Record<keyof BuildSpecs, string> = {
   motherboard: "Motherboard",
   psu: "PSU",
   cooling: "Cooling",
+  fans: "Fans",
   case: "Case",
   os: "OS",
 };
@@ -20,6 +21,7 @@ const SPEC_ORDER: (keyof BuildSpecs)[] = [
   "motherboard",
   "psu",
   "cooling",
+  "fans",
   "case",
   "os",
 ];
@@ -44,10 +46,10 @@ export function SpecList({
         if (value === undefined) return null;
         return (
           <div key={key} className="contents">
-            <dt className="text-[var(--color-text-secondary)]">
+            <dt className="text-text-secondary">
               {SPEC_LABELS[key]}
             </dt>
-            <dd className="text-[var(--color-text-primary)]">{value}</dd>
+            <dd className="text-text-primary">{value}</dd>
           </div>
         );
       })}

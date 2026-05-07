@@ -40,7 +40,7 @@ export function ThemeToggle() {
       onClick={toggle}
       aria-label={label}
       title={label}
-      className="inline-flex h-9 w-9 items-center justify-center border border-[var(--color-border)] text-[var(--color-text-primary)] transition-colors hover:border-[var(--color-text-primary)] focus:outline-none focus-visible:border-[var(--color-accent)] focus-visible:ring-1 focus-visible:ring-[var(--color-accent)]"
+      className="inline-flex h-9 w-9 items-center justify-center border border-border text-text-primary transition-colors hover:border-text-primary focus:outline-none focus-visible:border-[var(--color-accent)] focus-visible:ring-1 focus-visible:ring-[var(--color-accent)]"
     >
       {mounted && theme === "dark" ? <MoonIcon /> : <SunIcon />}
     </button>

@@ -1,4 +1,4 @@
-# Danerd — Prebuilt PC Business Site
+# SLATE. — Prebuilt PC Business Site
 
 ## What this is
 A marketing and catalog site for my prebuilt gaming PC business based in
@@ -10,20 +10,20 @@ The site is intentionally small and ships fast. It will grow as the
 business grows.
 
 ## Who it's for
-Local gaming PC buyers in Lake County, the North Chicago suburbs, and
-surrounding areas. Primary focus is budget-to-mid-tier gamers in the
-$500–$1500 range. Enthusiast-tier buyers ($2000+) are welcome but only
-through commissioned builds, not pre-stocked inventory.
+Local gaming PC buyers in Lake County and surrounding areas. Primary
+focus is budget-to-mid-tier gamers in the $500–$1500 range. Local pickup
+available in Lake County, IL — shipping available for buyers outside the
+area. Enthusiast-tier buyers ($2000+) are welcome but only through
+commissioned builds, not pre-stocked inventory.
 
 ## Pages
 
 ### 1. Home (single long scrolling page, does most of the work)
 Section order top to bottom:
 
-- **Hero**: Danerd brand name, one-line value proposition, location callout
-  (Waukegan, IL — serving Lake County and the North Chicago suburbs),
-  a brief mention that custom enthusiast-tier builds are available on
-  commission, and a primary CTA to the contact form.
+- **Hero**: SLATE. wordmark, one-line value proposition, location and
+  shipping callout, single CTA to the contact form. Keep it minimal —
+  three lines of copy and one button maximum.
 - **Current Builds**: 2–4 builds available right now. Each build is
   rendered as a self-contained card with photo, headline, price, key
   specs, target use case, and a per-build contact CTA. Full specs and
@@ -35,12 +35,11 @@ Section order top to bottom:
   Each entry shows a photo, the price sold at, and a one-line caption.
   A "see specs" expand reveals the full spec list and a short note about
   the customer use case. Acts as portfolio and trust signal.
-- **Custom Commissions** (section, not a page): Short pitch for custom
-  enthusiast-tier builds with a CTA scrolling to the contact form. No
-  detailed process page yet — that gets added if commissions become a
-  meaningful share of the business.
-- **Contact form**: Embedded at the bottom of the page. Same form
-  component as the About page.
+- **Contact form**: Embedded at the bottom of the page. Same component
+  as the About page. Intro copy covers both current builds and custom
+  commissions: "Interested in a current build or want to talk about a
+  custom commission? Fill out the form and I'll get back to you within
+  24 hours." Accepts an optional pre-filled subject from build card CTAs.
 
 ### 2. About
 Short, focused page that gives the site a second indexable URL with
@@ -48,9 +47,9 @@ strong local-business signal:
 
 - Who I am, my background, why I do this
 - **Why buy from me**: What makes these builds different, my approach,
-  my standards.
+  my standards
 - Service area: Waukegan, Gurnee, Libertyville, Lake Forest, North
-  Chicago, Lake County broadly
+  Chicago, Lake County broadly — plus shipping available nationwide
 - Phone, email, response time expectation
 - The same contact form component embedded here
 - Hours / availability if relevant
@@ -63,7 +62,9 @@ them.
 - Separate per-build detail pages (cards with expand/modal cover this)
 - Separate Builds catalog page (the home page section is enough until
   there are 6+ current builds)
-- Separate Custom Commissions page (the home page section is enough)
+- Custom Commissions section — deferred to v2 when there is real content
+  to put there (pricing tiers, turnaround time, past examples, process
+  details). For now, one line in the contact form intro handles it.
 - Filtering or sorting on builds (not needed under ~8 items)
 - Shopping cart, checkout, payment processing
 - Customer accounts, reviews system, build configurator
@@ -95,13 +96,16 @@ current docs — this is the most common source of bugs.
 ## Brand
 
 ### Name and logo
-- Brand name: **DANERD** — displayed in Geist Sans 800 weight, all caps,
-  white (`#ffffff`) in dark mode, near-black (`#0a0a0a`) in light mode
-- Logomark: the letter **N** in Geist Sans 800, inside a tight square
+- Brand name: **SLATE.** — displayed in Geist Sans 800 weight, all caps
+  with a period, white (`#ffffff`) in dark mode, near-black (`#0a0a0a`)
+  in light mode
+- Descriptor: "custom pcs" in a lighter weight below the wordmark where
+  space allows — not part of the name, just a descriptor
+- Logomark: the letter **S** in Geist Sans 800, inside a tight square
   with a 1px solid `#a855f7` border. Used as favicon and anywhere a
   compact mark is needed.
-- Note: Danerd is a placeholder name — do not over-engineer logo
-  components around it. Keep it easy to swap later.
+- Note: SLATE. is the current working name — do not over-engineer logo
+  components around it. Keep everything easy to swap later.
 
 ### Aesthetic
 Neo-brutalist minimalism with a dark tech / esports feel. The reference
@@ -143,7 +147,7 @@ Light mode (overrides only — accent colors stay the same):
 ### Theme implementation
 - **Default**: system preference via `prefers-color-scheme` media query
 - **Override**: manual toggle button in the nav; user's choice persisted
-  to `localStorage` under the key `danerd-theme`
+  to `localStorage` under the key `slate-theme`
 - **Implementation pattern**:
   - On page load, a small inline script in `<head>` reads `localStorage`
     before React hydrates to avoid flash of wrong theme (FOFT). If no
@@ -161,7 +165,7 @@ Light mode (overrides only — accent colors stay the same):
 The purple accent (`#a855f7`) stays the same in both light and dark mode
 — it has enough contrast on both backgrounds. Permitted uses only:
 
-- The "N" logomark border
+- The "S" logomark border
 - Price display on build cards
 - CTA button border and hover state (outlined, not filled)
 - One thin horizontal rule or line element per major page section,
@@ -191,7 +195,7 @@ to be excellent.
 
 **Per-page requirements:**
 - Unique, keyword-aware `<title>` (e.g., "Prebuilt Gaming PCs in
-  Waukegan, IL — Budget to Mid-Tier Builds | Danerd")
+  Lake County, IL — Budget to Mid-Tier Builds | SLATE.")
 - Unique meta description, 140–160 characters, written for click-through
 - Open Graph and Twitter card metadata for social sharing previews
 - Canonical URL set correctly

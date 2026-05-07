@@ -19,8 +19,8 @@ const localBusiness = {
   description:
     "Locally built and tested prebuilt gaming PCs serving Waukegan, Lake County, and the North Chicago suburbs.",
   url: SITE_URL,
-  telephone: "+1-555-000-0000",
-  email: "contact@example.com",
+  telephone: "+1-244-338-5301",
+  email: "danielbohon@gmail.com",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Waukegan",
@@ -134,10 +134,10 @@ export default function AboutPage() {
               <div className="flex flex-col gap-1">
                 <span className="font-medium text-text-primary">Phone</span>
                 <a
-                  href="tel:+15550000000"
+                  href="tel:+12243385301"
                   className="transition-colors hover:text-text-primary"
                 >
-                  (555) 000-0000
+                  (224) 338-5301
                 </a>
               </div>
               <div className="flex flex-col gap-1">
@@ -146,7 +146,7 @@ export default function AboutPage() {
                   href="mailto:contact@example.com"
                   className="transition-colors hover:text-text-primary"
                 >
-                  contact@example.com
+                  danielbohon@gmail.com
                 </a>
               </div>
               <div className="flex flex-col gap-1">
@@ -154,10 +154,6 @@ export default function AboutPage() {
                   Response time
                 </span>
                 <span>Usually within 24 hours.</span>
-              </div>
-              <div className="flex flex-col gap-1">
-                <span className="font-medium text-text-primary">Hours</span>
-                <span>Placeholder — your availability here.</span>
               </div>
             </div>
           </div>

@@ -1,6 +1,6 @@
 export function HeroSection() {
   return (
-    <section className="flex min-h-[60vh] flex-col items-center justify-center px-6 py-20 text-center">
+    <section className="flex min-h-[50vh] flex-col items-center justify-center px-6 py-16 text-center">
       <div className="flex w-full max-w-3xl flex-col items-center gap-8 sm:gap-10">
         <h1 className="font-sans text-6xl font-extrabold uppercase leading-none tracking-tight text-text-primary sm:text-7xl md:text-8xl lg:text-9xl">
           SLATE.
