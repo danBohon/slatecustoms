@@ -38,21 +38,21 @@ export async function submitContactForm(
 
   const resend = new Resend(apiKey);
 
-  // TODO: uncomment once a sending domain is verified in Resend
-  // const { error } = await resend.emails.send({
-  //   from: "SLATE. Contact <onboarding@resend.dev>",
-  //   to,
-  //   replyTo: `${name} <${email}>`,
-  //   subject: `New inquiry: ${subject}`,
-  //   text: `Name: ${name}\nEmail: ${email}\n\n${message}`,
-  // });
-  // if (error) {
-  //   console.error("Resend error:", error);
-  //   return {
-  //     status: "error",
-  //     message: "Failed to send — please email me directly.",
-  //   };
-  // }
+  const { error } = await resend.emails.send({
+    from: "SLATE. Contact <onboarding@resend.dev>",
+    to,
+    replyTo: `${name} <${email}>`,
+    subject: `New inquiry: ${subject}`,
+    text: `Name: ${name}\nEmail: ${email}\n\n${message}`,
+  });
+
+  if (error) {
+    console.error("Resend error:", error);
+    return {
+      status: "error",
+      message: "Failed to send — please email me directly.",
+    };
+  }
 
   return { status: "success" };
 }

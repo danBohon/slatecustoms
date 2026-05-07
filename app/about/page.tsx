@@ -142,12 +142,7 @@ export default function AboutPage() {
               </div>
               <div className="flex flex-col gap-1">
                 <span className="font-medium text-text-primary">Email</span>
-                <a
-                  href="mailto:contact@example.com"
-                  className="transition-colors hover:text-text-primary"
-                >
-                  danielbohon@gmail.com
-                </a>
+                <span>Use the contact form below.</span>
               </div>
               <div className="flex flex-col gap-1">
                 <span className="font-medium text-text-primary">
